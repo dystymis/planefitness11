@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PlaneFitness – Самара</title>
+    <link rel="icon" href="logo.ico">
+    <link href="style.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" defer></script>
+    <script src="app.js" defer></script>
+</head>
+<body>
+  <div class="overlay" style="display: none;">
+    <div class="login-wrapper">
+        <div class="login-content">
+            <h3 style="text-shadow: 0 0 0.25em #fff;">Вход</h3>
+            <form method="post" action="login.php">
+                <label for="username" class="text-success">
+                    Логин:
+                    <input type="text" name="username" id="username" placeholder="Логин" pattern="^[a-zA-Z][a-zA-Z0-9-_.]{8,20}$" required="required" />
+                </label>
+                <label for="password" class="text-success">
+                    Пароль:
+                    <input type="password" name="password" id="password" placeholder="••••••••" pattern="(?=^.{8,}$)((?=.*d)|(?=.*W+))(?![.n])(?=.*[A-Z])(?=.*[a-z]).*$" required="required" />
+                </label>
+                <button type="submit" class="btn-success btn-lg">Вход</button>
+            </form>
+        </div>
+    </div>
+</div>
+    <header class="p-3 bg-dark text-white">
+        <div class="container">
+          <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+            <a href="index.html" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+                <img src="logo.png" width="150" height="70" id="logo">
+            </a>
+    
+            <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0" id="menush">
+              <li><a href="#" class="nav-link px-2 text-secondary"><ya-tr-span data-index="18-0" data-translated="true" data-source-lang="en" data-target-lang="ru" data-value="Home" data-translation="Главная" data-ch="1" data-type="trSpan">Главная</ya-tr-span></a></li>
+              <li><a href="uslugi.html" class="nav-link px-2 text-white"><ya-tr-span data-index="19-0" data-translated="true" data-source-lang="en" data-target-lang="ru" data-value="Features" data-translation="Характеристики" data-ch="1" data-type="trSpan" data-selected="false">Услуги</ya-tr-span></a></li>
+              <li><a href="tarify.html" class="nav-link px-2 text-white"><ya-tr-span data-index="20-0" data-translated="true" data-source-lang="en" data-target-lang="ru" data-value="Pricing" data-translation="Цены" data-ch="1" data-type="trSpan">Тарифы</ya-tr-span></a></li>
+              <li><a href="certificate.html" class="nav-link px-2 text-white"><ya-tr-span data-index="21-0" data-translated="true" data-source-lang="en" data-target-lang="ru" data-value="FAQs" data-translation="Вопросы и ответы" data-ch="1" data-type="trSpan">Сертификаты</ya-tr-span></a></li>
+              <li><a href="about.html" class="nav-link px-2 text-white"><ya-tr-span data-index="22-0" data-translated="true" data-source-lang="en" data-target-lang="ru" data-value="About" data-translation="О нас" data-ch="1" data-type="trSpan">О нас</ya-tr-span></a></li>
+            </ul>
+    
+            <div class="text-end" id="logreg">
+              <button type="button" class="btn btn-outline-light me-2" href="login.php" id="loginLink"><ya-tr-span data-index="23-0" data-translated="true" data-source-lang="en" data-target-lang="ru" data-value="Login" data-translation="Вход" data-ch="1" data-type="trSpan">Вход</ya-tr-span></button>
+              <button type="button" class="btn btn-warning"><ya-tr-span data-index="23-1" data-translated="true" data-source-lang="en" data-target-lang="ru" data-value="Sign-up" data-translation="Регистрация" data-ch="1" data-type="trSpan">Регистрация</ya-tr-span></button>
+            </div>
+          </div>
+        </div>
+      </header>
+      <br>
+
+    <div class="container">
+        <div id="textitem1">
+            <h3 id="blurch" class="text-success">ФИТНЕС ДО КОНЦА ГОДА БЕСПЛАТНО!</h3>
+            <p class="text-white">ФИТНЕС-КЛУБЫ КЛАССА «ПРЕМИУМ» И «БИЗНЕС», 
+              ГДЕ КАЖДЫЙ КЛИЕНТ ПОЛУЧАЕТ ВСЁ НЕОБХОДИМОЕ <br>
+              ДЛЯ ПОЗИТИВНЫХ ИЗМЕНЕНИЙ И ВЫХОДА НА
+              БОЛЕЕ КАЧЕСТВЕННЫЙ УРОВЕНЬ ЖИЗНИ.</p>
+            <button class="btn btn-success">Наши тарифы</button>
+        </div>
+        <div class="pic-ctn">
+          <img src="crs1.jpg" alt="" class="pic">
+          <img src="crs2.jpg" alt="" class="pic">
+          <img src="crs3.jpg" alt="" class="pic">
+          <img src="crs4.jpg" alt="" class="pic">
+          <img src="crs5.png" alt="" class="pic">
+        </div>
+    </div>
+
+    <br>
+    <hr>
+    <br>
+<div id="mapka">
+    <h4 class="text-success">Вы можете найти нас здесь:
+    </h4>
+    <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3Ad245c2676c5e1a1823921bd7f11d45edcca3c2a619d982b1435efbc04d326b22&amp;source=constructor" width="750" height="240" frameborder="yes"></iframe>
+</div>
+
+<br>
+<hr>
+
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4">
+        <div class="col-md-4 d-flex align-items-center">
+          <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+          </a>
+          <span id="footertxt" class="text-white">© 2023 PlaneFitness</span>
+          <span id="footertxt2" class="text-white"><a href="tel:+79999999999" class="text-success">+7 (999) 999 99 99</a></span>
+        </div>
+    
+<a href="https://vk.com/dystymi"><img id="vklogo" src="Vkontakte-Logo-Transparent-PNG.png" width="48" height="48"></a>
+      </footer>
+</body>
+</html>
